@@ -16,7 +16,7 @@ export default function Register() {
     return (
 
         <div className="login-container h-screen bg-primary-color flex flex-col justify-center items-center text-text-color">
-            <img src={logo} alt="Logo" className="logo w-72 mb-0.5" />
+            <img src={logo} alt="Logo" className="logo w-24 mb-16" />
 
             <form onSubmit={handleRegisterSubmit} className="login-form flex flex-col w-full max-w-xs">
                 <input type="text" placeholder="Nome de usuário" className="input-field p-2.5 mb-2.5 border border-light-color rounded font-medium text-base" />

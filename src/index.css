@@ -3,3 +3,29 @@
 @tailwind utilities;
 
 @import "./styles/main.less";
+
+:root {
+  --primary-color: #02024B;
+  --secondary-color: #c6c5b9;
+  --dark-secondary-color: #a8a68c;
+  --accent-color: #c6c5b9;
+  --background-color: #FDFDFF;
+  --text-color: #151515;
+
+  --light-color: #FDFDFF;
+  --dark-color: #151515;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+button {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+}
+
+button:hover {
+  background-color: var(--accent-color);
+}
