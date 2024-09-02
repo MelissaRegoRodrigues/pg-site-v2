@@ -5,15 +5,17 @@
 @import "./styles/main.less";
 
 :root {
-  --primary-color: #02024B;
+  --primary-color: #060629;
   --secondary-color: #c6c5b9;
   --dark-secondary-color: #a8a68c;
   --accent-color: #c6c5b9;
-  --background-color: #FDFDFF;
+  --background-color: #fffffd;
   --text-color: #151515;
 
   --light-color: #FDFDFF;
   --dark-color: #151515;
+
+  --font-family: 'Quando', serif;
 }
 
 body {

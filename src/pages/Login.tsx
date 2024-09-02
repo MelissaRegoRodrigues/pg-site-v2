@@ -1,6 +1,6 @@
 
 import { useState } from 'react';
-import logo from '../assets/pg-logo.jpeg';
+import logo from '../assets/logo.svg';
 import { useNavigate } from 'react-router-dom';
 
 export default function Login() {
@@ -19,7 +19,7 @@ export default function Login() {
 
     return (
         <div className="login-container h-screen bg-primary-color flex flex-col justify-center items-center text-text-color">
-            <img src={logo} alt="Logo" className="logo w-24 mb-16" />
+            <img src={logo} alt="Logo" className="logo w-32 mb-16" />
 
             <form onSubmit={handleLoginSubmit} className="login-form flex flex-col w-full max-w-xs">
             <input type="email" placeholder="Email" className="input-field p-2.5 mb-2.5 border border-light-color rounded font-medium text-base" />
