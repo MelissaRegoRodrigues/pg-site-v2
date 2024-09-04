@@ -10,7 +10,7 @@ export default function Register() {
     };
 
     const handleLoginClick = () => {
-        navigate('/login'); 
+        navigate('/'); 
     };
 
     return (

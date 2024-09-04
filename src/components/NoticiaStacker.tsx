@@ -41,27 +41,35 @@ export default function NoticiaStacker() {
     };
 
     return (
-        <div className="relative h-[350px] w-full overflow-hidden">
+        <div className="relative h-[350px] overflow-hidden">
         
-        <div className="relative h-full flex items-end justify-end">
+        <div className="relative h-full flex items-end">
             {noticias.map((noticia, index) => (
             <div 
                 key={index} 
-                className={`absolute transition-transform duration-300 ease-in-out  ${index === currentIndex ? 'opacity-100 transform scale-[1.0] z-3' : index === (currentIndex + 1) % noticias.length ? 'opacity-60 transform scale-[0.9] z-2' : 'opacity-30 transform scale-[0.8] z-1'}`}
+                className={`absolute h-fit w-fit transition-transform duration-300 ease-in-out  ${index === currentIndex ? 'opacity-100 transform scale-[1.0] z-3' : index === (currentIndex + 1) % noticias.length ? 'opacity-60 transform scale-[0.9] z-2' : 'opacity-30 transform scale-[0.8] z-1'}`}
                 style={{ bottom: `${(2 - Math.abs(currentIndex - index)) * 10}px` }}
             >
                 <Noticia titulo={noticia.titulo} conteudo={noticia.conteudo} />
             </div>
             ))}
+
+            <button
+                    className="relative left-1/3 bottom-40 bg-transparent hover:text-dark-secondary z-20" // Adicione z-index para garantir que o botão esteja acima
+                    onClick={handleNext}
+                    style={{ transform: 'translateY(50%)' }}
+                >
+                    <FiChevronRight size={30} />
+                </button>
+
+            <div className="relative left-2/3 bottom-1/3 w-40 flex items-center">
+            <h1 className=" text-6xl text-light text-center ">Últimas atualizações</h1>
+            </div>
+            
+
         </div>
         
-        <button
-        className="absolute bottom-40 left-1/3 bg-transparent hover:text-dark-secondary z-20" // Adicione z-index para garantir que o botão esteja acima
-        onClick={handleNext}
-        style={{ transform: 'translateY(50%)' }}
-      >
-        <FiChevronRight size={30} />
-      </button>
-        </div>
+      </div>
+     
     );
 }

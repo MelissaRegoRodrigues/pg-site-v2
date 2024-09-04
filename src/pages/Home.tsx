@@ -2,6 +2,7 @@ import CarouselCustom from "../components/CarouselCustom";
 import Header from "../components/Header";
 import Noticia from "../components/Noticia";
 import NoticiaStacker from "../components/NoticiaStacker";
+import Sobre from "../components/Sobre";
 
 const baseURL = 'http://localhost:8080/pdfs/';
 
@@ -20,9 +21,11 @@ function Home() {
 
         <div className="mx-8 mb-8 relative">
           <NoticiaStacker />
-
-          
         </div>
+
+        <Sobre conteudo="Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit" />
         
 
 
