@@ -15,26 +15,27 @@ export default function Register() {
 
     return (
 
-        <div className="login-container h-screen bg-primary-color flex flex-col justify-center items-center text-text-color">
+        <div className="login-container h-screen bg-primary-color flex flex-col justify-center items-center text-text">
             <img src={logo} alt="Logo" className="logo w-32 mb-16" />
 
             <form onSubmit={handleRegisterSubmit} className="login-form flex flex-col w-full max-w-xs">
-                <input type="text" placeholder="Nome de usuário" className="input-field p-2.5 mb-2.5 border border-light-color rounded font-medium text-base" />
-                <input type="email" placeholder="Email" className="input-field p-2.5 mb-2.5 border border-light-color rounded font-medium text-base" />
-                <input type="password" placeholder="Senha" className="input-field p-2.5 mb-2.5 border border-light-color rounded font-medium text-base" />
-                <input type="password" placeholder="Confirmar senha" className="input-field p-2.5 mb-2.5 border border-light-color rounded font-medium text-base" />
-                <button type="submit" className="submit-button p-2.5 bg-secondary-color text-light-color rounded font-medium text-base cursor-pointer hover:bg-dark-secondary-color">
+                <input type="text" placeholder="Nome de usuário" className="input-field p-2.5 mb-2.5 border border-light rounded font-medium text-base" />
+                <input type="email" placeholder="Email" className="input-field p-2.5 mb-2.5 border border-light rounded font-medium text-base" />
+                <input type="password" placeholder="Senha" className="input-field p-2.5 mb-2.5 border border-light rounded font-medium text-base" />
+                <input type="password" placeholder="Confirmar senha" className="input-field p-2.5 mb-2.5 border border-light rounded font-medium text-base" />
+                <button type="submit" className="submit-button p-2.5 bg-blue text-light rounded font-medium text-base cursor-pointer hover:bg-dark-blue">
                     Registrar
                 </button>
             </form>
 
-            <div className='flex flex-row mt-2 items-center'>
-                <p className="text-light-color">Já tem login? </p>
-                <button className="register-button text-light-color border-none cursor-pointer mx-2 hover:text-secondary-color hover:bg-primary-color"
-                onClick={handleLoginClick}>
-                Login
-                </button>
-            </div>
+            <div className='flex items-center mt-2'>
+    <p className="text-light mb-0">Já tem login? 
+        <button className="register-button text-light bg- border-none cursor-pointer mx-2 hover:text-secondary hover:bg-primary-color"
+        onClick={handleLoginClick}>
+        Login
+        </button>
+    </p>
+</div>
             
         </div>
     );

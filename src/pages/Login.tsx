@@ -18,24 +18,26 @@ export default function Login() {
     };
 
     return (
-        <div className="login-container h-screen bg-primary-color flex flex-col justify-center items-center text-text-color">
+        <div className="login-container h-screen bg-primary-color flex flex-col justify-center items-center text-text">
             <img src={logo} alt="Logo" className="logo w-32 mb-16" />
 
             <form onSubmit={handleLoginSubmit} className="login-form flex flex-col w-full max-w-xs">
-            <input type="email" placeholder="Email" className="input-field p-2.5 mb-2.5 border border-light-color rounded font-medium text-base" />
-            <input type="password" placeholder="Senha" className="input-field p-2.5 mb-2.5 border border-light-color rounded font-medium text-base" />
-            <button type="submit" className="submit-button p-2.5 bg-secondary-color text-light-color rounded font-medium text-base cursor-pointer hover:bg-dark-secondary-color">
+            <input type="email" placeholder="Email" className="input-field p-2.5 mb-2.5 border border-light rounded font-medium text-base" />
+            <input type="password" placeholder="Senha" className="input-field p-2.5 mb-2.5 border border-light rounded font-medium text-base" />
+            <button type="submit" className="submit-button p-2.5 bg-blue text-light rounded font-medium text-base cursor-pointer hover:bg-dark-blue">
                 Login
             </button>
             </form>
 
-            <div className='flex flex-row mt-2 items-center'>
-                <p className="text-light-color">Não está registrado? </p>
-                <button className="register-button text-light-color border-none cursor-pointer mx-2 hover:text-secondary-color hover:bg-primary-color"
+            <div className='flex items-center mt-2'>
+            <p className="text-light mb-0">Não tem conta ainda? 
+                <button className="register-button text-light border-none cursor-pointer mx-2 hover:text-secondary hover:bg-primary-color"
                 onClick={handleRegisterClick}>
-                Registrar
+                Registre
                 </button>
-            </div>
+            </p>
+        </div>
+
             
         </div>
     );

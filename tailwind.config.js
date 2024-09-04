@@ -1,7 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './src/**/*.{js,jsx,ts,tsx}',
+    "./src/**/*.{js,jsx,ts,tsx}",
+    "./public/index.html"
   ],
   theme: {
     screens: {
@@ -10,27 +11,24 @@ module.exports = {
       lg: '976px',
       xl: '1440px',
     },
-    colors: {
-      'blue': '#02024B',
-      'pink': '#ff49db',
-      'orange': '#ff7849',
-      'green': '#13ce66',
-      'gray-dark': '#273444',
-      'gray': '#8492a6',
-      'gray-light': '#d3dce6',
-      'primary-color': '#02024B',
-      'secondary-color': '#c6c5b9',
-      'dark-secondary-color': '#a8a68c',
-      'accent-color': '#c6c5b9',
-      'background-color': '#FDFDFF',
-      'light-color': '#FDFDFF',
-      'text-color': '#151515'
-    },
     fontFamily: {
-      sans: ['Graphik', 'sans-serif'],
-      serif: ['Merriweather', 'serif'],
+      sans: ['Quando', 'sans-serif'],
+      serif: ['Quando', 'serif'],
     },
     extend: {
+      colors: {
+      'primary-color': '#0D1B2A',
+      'dark-blue': '#1B263B',
+      'blue': '#415A77',
+      'light-blue': '#778DA9',
+      'secondary': '#E0E1DD',
+      'dark-secondary': '#EEE9C0',
+      'accent': '#c6c5b9',
+      'background': '#151515',
+      'text': '#151515',
+      'light': '#FDFDFF',
+      'dark': '#151515',
+    },
       spacing: {
         '128': '32rem',
         '144': '36rem',
@@ -40,6 +38,7 @@ module.exports = {
       }
     }
   },
-  plugins: [],
+  plugins: [
+  ],
 }
 

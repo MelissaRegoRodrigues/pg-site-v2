@@ -2,32 +2,49 @@
 @tailwind components;
 @tailwind utilities;
 
-@import "./styles/main.less";
+@import "tw-elements/css/tw-elements.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Quando:wght@400;700&display=swap');
 
+/* Defina seus estilos globais abaixo das importações */
 :root {
-  --primary-color: #060629;
-  --secondary-color: #c6c5b9;
-  --dark-secondary-color: #a8a68c;
-  --accent-color: #c6c5b9;
-  --background-color: #fffffd;
-  --text-color: #151515;
+  --primary-color: #0D1B2A;
+  --secondary: #E0E1DD;
+  --dark-secondary: #EEE9C0;
+  --accent: #E0E1DD;
+  --background: #fffffd;
+  --text: #151515;
 
-  --light-color: #FDFDFF;
-  --dark-color: #151515;
+  --light: #FDFDFF;
+  --dark: #151515;
 
   --font-family: 'Quando', serif;
+
+  min-height: 100vh;
+  
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
-  background-color: var(--background-color);
-  color: var(--text-color);
+  background: rgb(13,27,42);
+  background: linear-gradient(180deg, rgba(13,27,42,1) 0%, rgba(27,38,59,1) 100%);
+  color: var(--text);
 }
 
 button {
   background-color: var(--primary-color);
-  color: var(--light-color);
+  color: var(--light);
 }
 
 button:hover {
-  background-color: var(--accent-color);
+  background-color: var(--accent);
+}
+
+a {
+  text-decoration: none;
+  border-bottom: none;
+  color: var(--light);
+
 }
